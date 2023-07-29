@@ -1,0 +1,123 @@
+header{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+nav {
+  width: 93%;
+  margin: auto;
+  padding: 10px 0px;
+}
+.navCh {
+  display: grid;
+  grid-template-columns: 5% 40% 35% 20%;
+}
+.logoh1{
+    margin: 0;
+}
+.spriteLogo {
+  background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png)
+    center center no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: auto;
+  width: 58px;
+  height: 66px;
+  background-position: -495px 19px;
+  background-size: 1210px;
+}
+.menu {
+  display: flex;
+}
+.menuList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  padding: 0px 10px;
+}
+.link:hover {
+  color: #ff3f6c;
+}
+.search {
+  display: flex;
+  border-radius: 5px;
+  background: #f5f5f6;
+  padding: 5px 10px;
+  width: 100%;
+}
+.searchInput {
+  border: 0px;
+  background-color: #f5f5f6;
+}
+.inputSearch {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+.userLink {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.userUL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  list-style-type: none;
+}
+.profileText {
+  font-size: 10px;
+  font-weight: 700;
+}
+.navCh {
+    display: grid;
+    grid-template-columns: 5% 40% 35% 20%;
+  }
+
+.logoMobile{
+    display: none;
+}
+.mobileHamburger{
+    display: none;
+}
+
+@media  screen and (max-width : 768px) {
+    .menu ,.inputSearch,.spriteLogo{
+        display: none;
+    }
+    .logoMobile{
+        display:block;
+        font-weight: 500;
+    }
+    .navCh {
+        display: flex;
+        justify-content: space-between; 
+      }
+      .logo{
+        display: flex;
+        place-items: center;
+      }
+      .profileText{
+        display: none;
+      }
+      .mobileHamburger{
+        display: flex;
+        margin-right:calc(0.8rem + 0.3vw);
+      }
+      .userSec{
+        width:40%
+      }
+}
