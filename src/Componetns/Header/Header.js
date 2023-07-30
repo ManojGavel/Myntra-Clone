@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./header.module.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useContextReducer } from "../../context/Context";
 
 export default function Header() {
+  const [state,dispatch] = useContextReducer();
   return (
     <header>
       <nav>
         <div className={classes.navCh}>
           <div className={classes.logo}>
             <div className={classes.mobileHamburger}>
-              <MenuIcon />
+              <MenuIcon onClick={()=>dispatch({type:"isHamburgerOpen"})} />
             </div>
             <h1 className={classes.logoh1}>
               <span className={classes.logoMobile}>Myntra</span>

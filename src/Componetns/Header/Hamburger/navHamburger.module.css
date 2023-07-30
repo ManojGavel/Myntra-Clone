@@ -1,0 +1,47 @@
+.main {
+  background-color: rgba(0, 0, 0, 0.749);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transition: isease-in-out 1.5s;
+}
+.content {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  width: 65vw;
+  height: 100vh;
+  transition: isease-in-out 1.5s;
+}
+.offerBanner {
+  width: 100%;
+  max-height: auto;
+}
+.menuUl {
+  list-style-type: none;
+  padding: 0;
+  text-align: start;
+  padding-left: calc(0.5rem + 3vw);
+  margin: 0;
+}
+
+.menuUl>li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.hr{
+    border: 1px solid gainsboro;
+}
+.menuLink{
+    list-style-type: none;
+    text-align: start;
+    padding-left: calc(0.5rem + 3vw);;
+}
+.menuLink>li{
+    margin: 15px 0;
+    font-size: 12px;
+    font-weight: 400;
+}
